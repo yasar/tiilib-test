@@ -1,0 +1,24 @@
+<?php
+// define application path
+define('T_PATH_ROOT', dirname(__FILE__));
+
+// define framework path
+define('T_PATH_FRAMEWORK', $_SERVER['DOCUMENT_ROOT'].'/../tlib');
+
+// include framework
+include T_PATH_FRAMEWORK.'/t.php';
+
+// set the exception handler
+set_exception_handler(array('T','ExceptionHandler'));
+
+// initialize the framework with the configuration file of our own.
+T::Init(T_PATH_ROOT.'/config.json');
+
+
+
+$AppFE = T::CreateApp('FrontEnd');
+//echo $AppFE->Name();
+//T::Config('database/host', 'yasar');
+echo T::Config('database/host');
+
+echo '<hr />', number_format(memory_get_usage());

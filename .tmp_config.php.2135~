@@ -1,0 +1,3 @@
+<?php
+
+TConfig::$mailengine = 'PHPMailer';

@@ -1,0 +1,13 @@
+{
+	"database"		: {
+		"host"		: "localhost",
+		"port"		: 3306,
+		"schema"	: "test",
+		"username" 	: "admin",
+		"password"	: "",
+		"engine"	: "PDO"
+	},
+	"mail"			: {
+		"tester"	: "yasarbayar@gmail.com"
+	}
+}

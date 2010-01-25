@@ -1,0 +1,6 @@
+<?php
+define('T_PATH_APPLICATION', dirname(__FILE__));
+include $_SERVER['DOCUMENT_ROOT'].'/../tlib/t.php';
+$config= T_PATH_APPLICATION.'/config.php';
+T::Init($config);
+
