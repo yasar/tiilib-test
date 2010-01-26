@@ -16,6 +16,6 @@ Tii::Init(TII_PATH_ROOT.'/config.json');
 
 
 
-echo Tii::CreateApp('FrontEnd')->Application()->GetHTML();
+echo Tii::CreateApp('FrontEnd')->Init()->GetHTML();
 
 echo '<hr />', number_format(memory_get_usage());

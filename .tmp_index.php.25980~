@@ -1,6 +1,0 @@
-<?php
-
-class Test extends TCore{
-	public function Test2(){
-	}
-}
