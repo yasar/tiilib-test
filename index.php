@@ -15,6 +15,6 @@ set_exception_handler(array('Tii','ExceptionHandler'));
 Tii::Init(TII_PATH_ROOT.'/config.json');
 
 
-echo Tii::CreateApp('FrontEnd')->Init()->GetHTML();
+echo Tii::CreateApp('FrontEnd')->Template()->GetHTML();
 
 echo '<hr />', number_format(memory_get_usage());

@@ -12,7 +12,24 @@
 	</head>
 	<body>
 		<h1>Test</h1>
-		<tii type="Module" class="Account" method="LoginControl" params="" base_path="/tiilib/modules" />
+        <div>
+		<tii type="Module" class="Account" method="LoginControl" params="{
+			'login_form': {
+				'holder': {
+			 	    'id': 'LoginSection'
+			 	},
+			 	'fields': {
+			        'login' : {
+			            'id' : 'username',
+                        'label':'Type in your login name'
+			        },
+			        'password' : {
+			            'id' : 'password'
+			        }
+			 	}
+			}
+		}" base_path="/tiilib/modules" />
+        </div>
 		<div id="page_content"></div>
 	</body>
 </html>
