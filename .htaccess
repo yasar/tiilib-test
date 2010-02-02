@@ -1,0 +1,4 @@
+RewriteEngine on
+Options +FollowSymlinks
+
+RewriteRule tiilib/.* ../tiilib/ [L,NC,QSA]

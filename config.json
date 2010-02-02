@@ -1,5 +1,6 @@
 {
-	"debug" : true,
+	"debug"           : true,
+    "use_cache"       : false,
 	"database"        : {
 		"host"        : "localhost",
 		"port"        : 3306,
@@ -9,6 +10,6 @@
 		"engine"      : "PDO"
 	},
 	"mail"            : {
-		"tester"    : "yasarbayar@gmail.com"
+		"tester"      : "yasarbayar@gmail.com"
 	}
 }
