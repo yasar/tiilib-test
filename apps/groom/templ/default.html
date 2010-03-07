@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Untitled Document</title>
+		<style type="text/css">
+			#page_content{
+				border: 1px solid #369;
+				padding: 5px;
+			}
+		</style>
+	</head>
+	<body>
+        <tii type="plugin" module="menu" name="generate" params='{
+            "structure": [
+                {"title":"Home","link":"/"},
+                {"title":"About","link":"/about"}
+            ],
+            "parser": "mbmenu",
+            "load": "function(){alert(1);}"
+        }' />
+        <div style="width: 200px;">
+		<tii type="module" name="account" controller="login" params="{
+			'login_form': {
+				'holder': {
+			 	    'id': 'LoginSection'
+			 	},
+			 	'fields': {
+			        'login' : {
+                        'label':'Login name'
+			        },
+			        'password' : {
+			        }
+			 	}
+			}
+		}" base_path="/tiilib/modules" />
+        </div>
+		<div id="page_content"></div>
+	</body>
+</html>

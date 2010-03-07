@@ -1,0 +1,4 @@
+RewriteEngine on
+Options +FollowSymlinks
+
+RewriteRule ^(.*)$ /tiilib/apps/admin/$1 [L,NC,QSA]
