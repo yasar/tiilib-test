@@ -25,7 +25,6 @@ Tii::Init(TII_PATH_ROOT._.'config.json');
 
 echo Tii::CreateApp('Admin')
     ->Template()
-    ->AddScript(TII_PATH_FRAMEWORK."{$_}scripts{$_}jquery-1.4.1.min.js")
     ->GetHTML();
 
 echo '<hr />', number_format(memory_get_usage()),' @ ',Tii::Finish();

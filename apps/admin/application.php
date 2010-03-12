@@ -7,7 +7,7 @@ class Admin extends TiiApplication_Admin{
 		parent::__construct();
 	}
 	
-	public function Index(){
+	public function Index2(){
 		$this->Template()->SetContent('page_content', 'heeellllooo');
 	}
 }

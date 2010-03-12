@@ -5,7 +5,7 @@ define('TII_PATH_ROOT', dirname(__FILE__));
 define('TII_URL_ROOT','');
 
 // define framework path
-define('TII_PATH_FRAMEWORK', ($_SERVER['DOCUMENT_ROOT'].'/../tiilib'));
+define('TII_PATH_FRAMEWORK', realpath($_SERVER['DOCUMENT_ROOT'].'/../tiilib'));
 
 // ideally we will never be in need of refering to this variable !!!
 //define('TII_URL_FRAMEWORK','/tiilib');

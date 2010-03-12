@@ -14,10 +14,13 @@
         <tii type="plugin" module="menu" name="generate" params='{
             "structure": [
                 {"title":"Home","link":"/"},
-                {"title":"About","link":"/about"}
+                {"title":"About","link":"/about"},
+                {"title":"Test","link":"/test"}
             ],
-            "parser": "mbmenu",
-            "load": "function(){alert(1);}"
+            "class": "topMenu droppy",
+            "id":"topMenu",
+            "parser": "droppy",
+            "load": "function(){$(\".droppy\").droppy();}"
         }' />
         <div style="width: 200px;">
 		<tii type="module" name="account" controller="login" params="{
